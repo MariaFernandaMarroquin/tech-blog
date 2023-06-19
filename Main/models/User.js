@@ -1,5 +1,5 @@
-const { Model, DataTypes } = require('sequelize');
-const bcrypt = require('bcrypt');
+const { Model, DataTypes } = require("sequelize");
+const bcrypt = require("bcrypt");
 const sequelize = require('../config/connection');
 
 //Check if password entered by user is the hashed password
@@ -52,7 +52,7 @@ User.init(
         timestamps: false,
         freezeTableName: true,
         underscored: true,
-        modelName: 'user',
+        modelName: "user",
     }
 );
 
